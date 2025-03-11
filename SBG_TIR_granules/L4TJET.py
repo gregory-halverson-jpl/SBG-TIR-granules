@@ -97,4 +97,4 @@ class L4JET:
 
 class L4TJET(ECOSTRESSTiledGranule, L4JET):
     _PRIMARY_VARIABLE = "ETdaily"
-    _PRODUCT_NAME = "L3T_JET"
+    _PRODUCT_NAME = "L4T_JET"
