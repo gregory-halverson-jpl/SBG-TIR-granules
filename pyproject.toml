@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "SBG_TIR_granules"
 version = "1.0.0"
-description = "ECOSTRESS Collection 2 Data Product Granule Encapsulation Classes"
+description = "SBG-TIR OTTER Collection 1 Data Product Granule Encapsulation Classes"
 readme = "README.md"
 authors = [
     { name = "Gregory H. Halverson", email = "gregory.h.halverson@jpl.nasa.gov" },
