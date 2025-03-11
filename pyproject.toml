@@ -39,7 +39,7 @@ dev = [
 SBG_TIR_granules = ["*.txt"]
 
 [project.urls]
-"Homepage" = "https://github.com/ECOSTRESS-Collection-2/SBG-TIR-granules"
+"Homepage" = "https://github.com/sbg-tir/SBG-TIR-granules"
 
 [tool.setuptools.packages.find]
 include = ["SBG_TIR_granules"]
