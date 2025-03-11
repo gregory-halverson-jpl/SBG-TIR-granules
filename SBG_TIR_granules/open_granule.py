@@ -7,7 +7,7 @@ from .granule import ECOSTRESSGranule
 from .L1CTRAD import L1CTRAD
 from .L2TLSTE import L2TLSTE
 from .L2TSTARS import L2TSTARS
-from .L3TJET import L3TJET
+from .L4TJET import L4TJET
 from .L3TMET import L3TMET
 from .L3TSM import L3TSM
 from .L3TSEB import L3TSEB
@@ -34,7 +34,7 @@ def open_granule(
         return L2TSTARS(filename, **kwargs)
     elif filename_base.startswith("ECOv003_L3T_JET"):
         logger.info(f"loading Collection 2 L3T JET: {cl.file(filename)}")
-        return L3TJET(filename, **kwargs)
+        return L4TJET(filename, **kwargs)
     elif filename_base.startswith("ECOv003_L3T_MET"):
         logger.info(f"loading Collection 2 L3T MET: {cl.file(filename)}")
         return L3TMET(filename, **kwargs)
