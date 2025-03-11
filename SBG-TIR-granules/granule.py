@@ -24,10 +24,10 @@ logger = logging.getLogger(__name__)
 
 DEFAULT_JSON_INDENT = 2
 
-class ECOSTRESSGranule:
+class SBGGranule:
     _LEVEL = None
     _PRIMARY_VARIABLE = None
-    _DEFAULT_UTM_CELL_SIZE = 70
+    _DEFAULT_UTM_CELL_SIZE = 60
     _DEFAULT_GEOGRAPHIC_CELL_SIZE = 0.0006
     _STANDARD_METADATA_GROUP = "StandardMetadata"
     _PRODUCT_METADATA_GROUP = "ProductMetadata"

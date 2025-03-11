@@ -21,7 +21,7 @@ from matplotlib.colors import Colormap
 from rasters import Raster, RasterGeometry, RasterGrid
 from shapely import Polygon
 
-from .granule import ECOSTRESSGranule
+from .granule import SBGGranule
 from .write_XML_metadata import write_XML_metadata
 
 DEFAULT_JSON_INDENT = 2
@@ -29,7 +29,7 @@ DEFAULT_JSON_INDENT = 2
 logger = logging.getLogger(__name__)
 
 
-class ECOSTRESSTiledGranule(ECOSTRESSGranule):
+class ECOSTRESSTiledGranule(SBGGranule):
     _PRODUCT_NAME = None
 
     _COMPRESSION = "zstd"
@@ -58,7 +58,7 @@ class ECOSTRESSTiledGranule(ECOSTRESSGranule):
             granule_preview_shape: (int, int) = None,
             granule_preview_quality: int = None,
             **kwargs):
-        ECOSTRESSGranule.__init__(
+        SBGGranule.__init__(
             self,
             *args,
             product_filename=product_location,

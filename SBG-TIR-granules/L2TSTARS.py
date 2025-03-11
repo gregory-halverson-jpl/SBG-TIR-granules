@@ -4,7 +4,7 @@ from typing import Union
 from dateutil import parser
 
 from .colors import *
-from .granule import ECOSTRESSGranule
+from .granule import SBGGranule
 from .tiled_granule import ECOSTRESSTiledGranule
 
 PRIMARY_VARIABLE = "NDVI"
@@ -17,7 +17,7 @@ VARIABLE_CMAPS = {
     "albedo-UQ": "jet"
 }
 
-class L2STARSGranule(ECOSTRESSGranule):
+class L2STARSGranule(SBGGranule):
     _PRODUCT_NAME = "L2T_STARS"
     _PRIMARY_VARIABLE = "NDVI"
     _GRANULE_PREVIEW_CMAP = PREVIEW_CMAP

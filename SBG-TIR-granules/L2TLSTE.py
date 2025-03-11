@@ -8,7 +8,7 @@ import numpy as np
 import rasters as rt
 from rasters import Raster
 
-from .granule import ECOSTRESSGranule
+from .granule import SBGGranule
 from .tiled_granule import ECOSTRESSTiledGranule
 
 logger = logging.getLogger(__name__)
@@ -35,12 +35,12 @@ VARIABLE_NAMES = [
 
 PRIMARY_VARIABLE = "LST"
 
-class L2LSTEGranule(ECOSTRESSGranule):
+class L2LSTEGranule(SBGGranule):
     _PRIMARY_VARIABLE = PRIMARY_VARIABLE
     _PRODUCT_METADATA_GROUP = PRODUCT_METADATA_GROUP
 
     def __init__(self, product_filename: str):
-        ECOSTRESSGranule.__init__(self, product_filename=product_filename)
+        SBGGranule.__init__(self, product_filename=product_filename)
 
         self._LST = None
         self._LST_err = None

@@ -3,7 +3,7 @@ import logging
 
 import colored_logging as cl
 
-from .granule import ECOSTRESSGranule
+from .granule import SBGGranule
 from .L1CTRAD import L1CTRAD
 from .L2TLSTE import L2TLSTE
 from .L2TSTARS import L2TSTARS
@@ -20,7 +20,7 @@ def open_granule(
         filename: str,
         L2_CLOUD_filename: str = None,
         L1B_GEO_filename: str = None,
-        **kwargs) -> ECOSTRESSGranule:
+        **kwargs) -> SBGGranule:
     filename_base = splitext(basename(filename))[0]
 
     if filename_base.startswith("ECOv003_L1CT_RED"):

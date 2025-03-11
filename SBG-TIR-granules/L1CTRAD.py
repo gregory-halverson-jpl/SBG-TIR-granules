@@ -17,7 +17,7 @@ import rasters
 from rasters import Raster, MultiRaster, RasterGeometry, RasterGrid, KDTree
 import colored_logging as cl
 
-from .granule import ECOSTRESSGranule
+from .granule import SBGGranule
 from .tiled_granule import ECOSTRESSTiledGranule
 
 __author__ = "Gregory Halverson"
@@ -52,12 +52,12 @@ TILED_OUTPUT_VARIABLES = [
 ]
 
 
-class L1RADGranule(ECOSTRESSGranule):
+class L1RADGranule(SBGGranule):
     _PRIMARY_VARIABLE = PRIMARY_VARIABLE
     _PRODUCT_METADATA_GROUP = PRODUCT_METADATA_GROUP
 
     def __init__(self, product_filename: str):
-        ECOSTRESSGranule.__init__(self, product_filename=product_filename)
+        SBGGranule.__init__(self, product_filename=product_filename)
 
     def radiance(self, band: int, apply_cloud: bool = False) -> Raster:
         if band not in range(1, 6):
