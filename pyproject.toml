@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "SBG_TIR_granules"
-version = "0.1.1"
+version = "0.1.2"
 description = "SBG-TIR OTTER Collection 1 Data Product Granule Encapsulation Classes"
 readme = "README.md"
 authors = [

@@ -9,7 +9,7 @@ from .tiled_granule import ECOSTRESSTiledGranule
 
 GRANULE_PREVIEW_CMAP = ET_COLORMAP
 
-class L3ETPTJPL:
+class L4JET:
     logger = logging.getLogger(__name__)
 
     _DATA_GROUP_NAME = "EVAPOTRANSPIRATION PT-JPL"
@@ -95,6 +95,6 @@ class L3ETPTJPL:
         return self.ETinst / 2450000.0
 
 
-class L3TJET(ECOSTRESSTiledGranule, L3ETPTJPL):
+class L4TJET(ECOSTRESSTiledGranule, L4JET):
     _PRIMARY_VARIABLE = "ETdaily"
-    _PRODUCT_NAME = "L3T_JET"
+    _PRODUCT_NAME = "L4T_JET"
